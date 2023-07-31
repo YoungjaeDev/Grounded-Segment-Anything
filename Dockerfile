@@ -1,8 +1,8 @@
 FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-devel
 
 # Arguments to build Docker Image using CUDA
-ARG USE_CUDA=0
-ARG TORCH_ARCH=
+ARG USE_CUDA=1
+ARG TORCH_ARCH=8.6
 
 ENV AM_I_DOCKER True
 ENV BUILD_WITH_CUDA "${USE_CUDA}"
